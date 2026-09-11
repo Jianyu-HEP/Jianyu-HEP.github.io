@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jianyu-hep.github.io/sitemap.xml
