@@ -1,0 +1,55 @@
+/* Light research cards and compact conference records. */
+.page-research .visual-topics { gap: 28px; }
+.page-research .visual-topic { background: var(--white); color: var(--ink); border-color: var(--line); border-radius: 12px; }
+.page-research .visual-topic:hover { color: var(--ink); border-color: #af9e80; transform: none; }
+.page-research .visual-topic-image { height: 230px; background: #fffdf7; padding: 24px 34px 34px; border-bottom: 1px solid var(--line); }
+.page-research .visual-topic-image.photo { padding: 0; }
+.page-research .topic-index { background: var(--white); color: var(--accent); border: 1px solid var(--line); border-radius: 4px; }
+.page-research .topic-image-credit { font-size: 9px; }
+.page-research .visual-topic-copy { padding: 23px 25px; }
+.page-research .visual-topic .topic-meta { color: var(--muted); }
+.page-research .visual-topic .topic-meta span:last-child { color: #426353; }
+.page-research .research-status { border-color: #c1d0bf; background: #eef2e8; padding: 2px 7px; }
+.page-research .visual-topic .topic-meta .is-ongoing { color: #805428; border-color: #dbc5a1; background: #f8efdc; }
+.page-research .visual-topic h2 { margin: 15px 0 10px; font-size: 25px; line-height: 1.35; }
+.page-research .visual-topic p { color: var(--muted); font-size: 15px; line-height: 1.8; margin: 0 0 20px; }
+.page-research .visual-topic-link { border-color: var(--line); color: var(--accent); }
+.page-research .research-masthead > p { max-width: 420px; }
+.page-talks .conference-section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 15px; margin: 0 0 22px; padding-top: 24px; border-top: 1px solid var(--line); }
+.page-talks .conference-section-heading h2 { font: 550 26px/1.4 var(--sans); letter-spacing: -.4px; }
+.page-talks .conference-section-heading > span { font-size: 12px; color: var(--muted); }
+.page-talks .conference-card { grid-template-columns: 108px minmax(0, 1fr); padding: 20px; gap: 22px; align-items: start; }
+.page-talks .conference-copy h3 { font: 550 21px/1.45 var(--sans); letter-spacing: -.2px; margin: 0 0 12px; }
+.page-talks .conference-name { margin: 11px 0 8px; font-size: 12px; }
+.page-talks .conference-meta { font-size: 10px; }
+.page-talks .conference-place { font-size: 13px; }
+.page-talks .poster-frame { min-height: 150px; background: #eee7d9; border-radius: 5px; }
+.page-talks .poster-frame img { height: 155px; }
+.page-talks .conference-card .talk-links { font-size: 12px; gap: 12px; }
+.page-talks .domestic-conferences { margin-top: 44px; }
+.domestic-list { margin: 0; padding: 0; list-style: none; }
+.domestic-talk { display: grid; grid-template-columns: 105px minmax(0, 1fr) 108px; gap: 22px; padding: 21px 0; border-bottom: 1px solid var(--line); }
+.domestic-talk time { font: 12px/1.8 var(--mono); color: var(--accent); padding-top: 3px; }
+.domestic-talk h3 { font: 550 18px/1.6 var(--sans); letter-spacing: 0; margin: 0 0 6px; }
+.domestic-talk p { font-size: 13px; line-height: 1.8; color: var(--muted); margin: 0; }
+.domestic-talk-meta { display: flex; flex-direction: column; align-items: end; gap: 7px; font-size: 12px; color: var(--muted); padding-top: 4px; }
+.domestic-talk-meta .invited { color: var(--accent); }
+@media (max-width: 1000px) {
+  .page-talks .conference-card { grid-template-columns: 85px minmax(0, 1fr); padding: 16px; gap: 16px; }
+  .page-talks .conference-copy h3 { font-size: 19px; }
+}
+@media (max-width: 760px) {
+  .page-research .visual-topics { gap: 22px; }
+  .page-research .visual-topic-image { height: 210px; padding: 24px 24px 32px; }
+  .page-research .visual-topic-image.photo { padding: 0; }
+  .page-research .visual-topic-copy { padding: 20px; }
+  .page-research .visual-topic h2 { font-size: 23px; }
+  .page-talks .conference-section-heading h2 { font-size: 23px; }
+  .page-talks .conference-card { grid-template-columns: 84px minmax(0, 1fr); gap: 16px; padding: 16px; }
+  .page-talks .poster-frame, .page-talks .poster-frame img { height: 132px; min-height: 132px; }
+  .page-talks .conference-copy h3 { font-size: 18px; }
+  .page-talks .conference-meta { font-size: 9px; }
+  .domestic-talk { grid-template-columns: 1fr; gap: 8px; padding: 20px 0; }
+  .domestic-talk h3 { font-size: 17px; }
+  .domestic-talk-meta { flex-direction: row; align-items: center; gap: 14px; padding-top: 0; }
+}
