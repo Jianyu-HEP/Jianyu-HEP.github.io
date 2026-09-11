@@ -1,4 +1,5 @@
 /* A compact, static introduction for readers without a physics background. */
+.page-home { --paper: #FFECBA; }
 .physics-primer { padding-top: 4px; padding-bottom: 34px; }
 .primer-heading { display: flex; justify-content: space-between; align-items: end; gap: 28px; border-top: 1px solid var(--line); padding-top: 27px; margin-bottom: 24px; }
 .primer-heading .eyebrow { color: var(--accent); margin-bottom: 10px; font-size: 11px; }
