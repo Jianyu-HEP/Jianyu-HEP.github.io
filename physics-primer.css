@@ -1,0 +1,30 @@
+/* A compact, static introduction for readers without a physics background. */
+.physics-primer { padding-top: 4px; padding-bottom: 34px; }
+.primer-heading { display: flex; justify-content: space-between; align-items: end; gap: 28px; border-top: 1px solid var(--line); padding-top: 27px; margin-bottom: 24px; }
+.primer-heading .eyebrow { color: var(--accent); margin-bottom: 10px; font-size: 11px; }
+.primer-heading h2 { font: 500 30px/1.3 var(--sans); letter-spacing: -.6px; }
+.primer-heading > p { max-width: 365px; margin: 0; font-size: 14px; line-height: 1.7; color: var(--muted); }
+.primer-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.primer-story { min-width: 0; display: flex; flex-direction: column; }
+.primer-story + .primer-story { border-left: 1px solid var(--line); padding-left: 28px; }
+.primer-art { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 68px; margin-bottom: 12px; color: #47695e; }
+.primer-art > span { font: 13px var(--mono); color: var(--accent); }
+.primer-art svg { display: block; width: 156px; max-width: 75%; height: 68px; }
+.primer-story h3 { font: 600 19px/1.5 var(--sans); letter-spacing: -.2px; margin: 0 0 10px; }
+.primer-story > p { font-size: 14px; line-height: 1.85; color: var(--muted); margin: 0 0 16px; }
+.primer-story > a { margin-top: auto; align-self: start; font-size: 12px; line-height: 1.7; color: var(--accent); text-underline-offset: 4px; }
+.primer-story > a:hover { text-decoration: underline; }
+.primer-footnote { font-size: 11px; line-height: 1.7; color: var(--muted); margin: 23px 0 0; }
+@media (max-width: 760px) {
+  .primer-heading { display: block; margin-bottom: 8px; }
+  .primer-heading h2 { font-size: 26px; }
+  .primer-heading > p { margin-top: 12px; max-width: none; }
+  .primer-grid { grid-template-columns: 1fr; gap: 0; }
+  .primer-story { padding: 18px 0; }
+  .primer-story + .primer-story { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; }
+  .primer-art { height: 48px; margin-bottom: 8px; }
+  .primer-art svg { height: 48px; width: 125px; }
+  .primer-story > p { margin-bottom: 10px; }
+  .primer-footnote { margin-top: 6px; }
+}
+@media print { .primer-story { break-inside: avoid; } }
